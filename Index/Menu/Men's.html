@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Men's</title>
+<!--The charset attribute specifies the character encoding for the HTML document-->
+<meta charset="utf-8">
+<!--Using the viewport meta tag to control layout on mobile browsers-->   
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--Main CSS style-->
+<link rel="stylesheet" type="text/css" href="../CSS/Pages.css">
+<!--Pages CSS style-->
+<link rel="stylesheet" type="text/css" href="../CSS/main.css">
+<!--Star rating bootstrap-->
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+<!--Button QTY script-->    
+<script src="../CSS/script.js"></script>
+</head>
+    
+<body>
+
+<!--The header which is using an logo image-->
+<div class="header">
+	<a href="../Index.html">
+		<img src="../photos/logo/logo.jpg" alt="ShoesZone" style="width:25%">
+	</a>
+	</div>
+        <!--Horizontal menu with link-buttons and one drop-down button using unordered and ordered lists -->
+        <ul>
+            <li><a href="../Index.html">Home</a></li>
+            <li><a href="About.html">About Us</a></li>
+            <li><a>Shop Now</a>
+        <ul>
+            <li><a href="Men's.html">Men's</a></li>
+            <li><a href="Women's.html">Women's</a></li>
+            <li><a href="Kids.html">Kids</a></li>
+        </ul>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+<!-- END of Menu -->
+    
+            <!--Gallery division with images in a table-->
+            <table>
+                <tr>
+                <td colspan = "4"><h1>Products Gallery</h1></td>
+                </tr>
+                
+                <tr> 
+                    <td colspan = "4">Click on on image to Zoom:</td>
+                </tr>
+				<tr class="line">
+                    <td class="legend"><h1>Trainers</h1></td>
+                    <!--Each photo has the one click property to Zoom-->
+                    <td><a href="../photos/men/Trainers1.jpg"><img src="../photos/men/Trainers1.jpg" style="width:100%" alt ="Trainers"></a>
+					   <p>Trainers</p><p>30$</p></td>
+                    <td><a href="../photos/men/Trainers2.jpg"><img src="../photos/men/Trainers2.jpg" style="width:100%" alt ="Trainers"></a>
+					   <p>Trainers</p><p>30$</p></td>
+                    <td><a href="../photos/men/Trainers3.jpg"><img src="../photos/men/Trainers3.jpg" style="width:100%" alt ="Trainers"></a>
+					   <p>Trainers</p><p>30$</p></td>
+				</tr>
+                <tr class="line">
+                    <td class="legend"><h1>Boots</h1></td>
+                    <td><a href="../photos/men/Boots1.jpg"><img src="../photos/men/Boots1.jpg" style="width:100%" alt ="Boots"></a>
+                        <p>Boots</p><p>40$</p></td>
+                    <td><a href="../photos/men/Boots2.jpg"><img src="../photos/men/Boots2.jpg" style="width:100%" alt ="Boots"></a>
+					   <p>Boots</p><p>40$</p></td>
+                    <td><a href="../photos/men/Boots3.jpg"><img src="../photos/men/Boots3.jpg" style="width:100%" alt ="Boots"></a>
+					   <p>Boots</p><p>50$</p></td>
+				</tr>
+    </table>
+    <!--Sizing Option-->
+    <div class="size">
+    
+    <b>Size</b>
+    
+    <select>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        
+    </select>
+    </div>
+    <!--Quantity Option-->
+    <div class="form">
+            <form>
+                <h3>QTY</h3>
+                <div class="value-button" id="decrease" onclick="decreaseValue()" data-value="Decrease Value">-</div>
+                <input type="number" id="number" value="0" />
+                <div class="value-button" id="increase" onclick="increaseValue()" data-value="Increase Value">+</div>
+             </form>
+    </div>
+<!--Reviews division with stars-->
+<div class="stars">
+    <form action="Rating">
+      <input class="star star-5" id="star-5" type="radio" name="star"/>
+      <label class="star star-5" for="star-5"></label>
+      <input class="star star-4" id="star-4" type="radio" name="star"/>
+      <label class="star star-4" for="star-4"></label>
+      <input class="star star-3" id="star-3" type="radio" name="star"/>
+      <label class="star star-3" for="star-3"></label>
+      <input class="star star-2" id="star-2" type="radio" name="star"/>
+      <label class="star star-2" for="star-2"></label>
+      <input class="star star-1" id="star-1" type="radio" name="star"/>
+      <label class="star star-1" for="star-1"></label>
+    </form>
+</div>
+<!--The footer-->
+<div class="footer">Copyright &copy; 2019 Alexandru-Nicolae Savu
+</div>
+<!--Back to top button-->
+<button onclick="topFunction()" id="bTop" title="Go to top">Top</button>
+
+<!--This is script for "Back to top" button -->
+<script src="../CSS/top.js">
+</script>
+</body>
+</html>

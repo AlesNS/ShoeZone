@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Title of the page-->
+<title>Shoe Zone</title>
+    
+<!--The charset attribute specifies the character encoding for the HTML document-->
+<meta charset="utf-8">
+<!--Using the viewport meta tag to control layout on mobile browsers-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--This is the CSS for the main style -->
+<link rel="stylesheet" type="text/css" href="CSS/main.css">
+<!--This is the CSS for the 2 side Sale image style -->
+<link rel="stylesheet" type="text/css" href="CSS/Side.css">
+<!--The charset attribute specifies the character encoding for the HTML document-->
+    
+</head>
+
+<body>
+    
+<!--The header which is using an logo image-->
+<div class="header">
+	<a href="Index.html">
+		<img src="photos/logo/logo.jpg" alt="Shoe Zone" style="width:30%">
+	</a>
+	</div>
+    
+<!--Horizontal menu with link-buttons and one drop-down button using unordered and ordered lists -->
+<div class="row">
+    <ul>
+        <li><a href="Index.html">Home</a></li>
+        <li><a href="Menu/About.html">About Us</a></li>
+    </ul>
+    <ul>
+        <li><a>Shop Now</a>
+    <ul>
+        <li><a href="Menu/Men's.html">Men's</a></li>
+        <li><a href="Menu/Women's.html">Women's</a></li>
+        <li><a href="Menu/Kids.html">Kids</a></li>
+    </ul>
+        <li><a href="Menu/Contact.html">Contact</a></li>
+    </ul>
+    <!--END of menu -->
+    <!-- 2 side image division-->
+    </div>
+    
+        <div class="card-container">
+        <div class="card">
+        <div class="side"><img src="photos/sale.png" alt="Limited Time" style="width: 100%"></div>
+        <div class="side back"><h2>Limited Time</h2></div>
+        </div>
+    </div>
+<div class="row">
+	<div class="content">
+		<div class="box">
+			
+            <h1>Welcome to Shoes Zone</h1>
+            
+            <!--The Video division-->
+            <div class="video">	
+                <video style="width: 50%" controls >
+                <source src="Promo.mp4" type="video/mp4">			
+                </video>
+            <!--The origin source of video-->
+            <p>Video courtesy of <a href="https://www.youtube.com/watch?v=W3-mnuJ-ZK4" target="_blank">Promotional</a>.</p>
+            </div>
+        </div>
+    </div>
+</div>
+		
+			<!-- I created three images with a link inside for easier navigation from page to page-->
+		<div class="bottom">
+            <div class="box">
+			 <h2>Men's</h2>
+			 <!--Image with link inside-->
+				<a href="Menu/Men's.html">
+					<img src="Photos/Men/men.jpg" alt="Men's" style="width:100%" title="image source: https://www.google.com">
+				</a>
+		</div>
+		<div class="box">
+			 <h2>Women's</h2>
+			 <!--Image with link inside-->
+				<a href="Menu/Women's.html">
+					<img src="Photos/Women's/women's.jpg" alt="Women's" style="width:100%;" title="image source: https://www.google.com">
+				</a>
+		</div>
+		<div class="box">
+			<h2>Kids</h2>
+			<!--Image with link inside-->
+				<a href="Menu/Kids.html">
+					<img src="Photos/kids/kids.jpg" alt="Kids" style="width:100%" title="image source: https://www.google.com">
+				</a>
+            </div>
+    </div>
+<!--The footer -->
+<div class="footer">Copyright &copy; 2019 Alexandru-Nicolae Savu
+</div>
+    
+<!--Back to top button-->
+<button onclick="topFunction()" id="bTop" title="Go to top">Top</button>
+    
+<!--This is script for "Back to top" button -->
+<script src="../CSS/top.js">
+</script>
+    
+</body>
+</html>
